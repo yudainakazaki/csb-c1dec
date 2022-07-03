@@ -103,6 +103,7 @@ h3 {
   height: 5%;
   background-color: rgba(255, 255, 255, 0.83);
   justify-content: space-between;
+  vertical-align: middle;
 }
 
 .header-logo {
@@ -124,7 +125,9 @@ h3 {
   position: relative;
   display: flex;
   justify-content: center;
+  vertical-align: middle;
   align-items: center;
+  height: 100%;
 }
 
 .nav-list {
@@ -616,9 +619,9 @@ footer {
   .btn-burger {
     position: fixed;
     width: 10%;
-    height: auto;
+    height: 100%;
     right: 10px;
-    top: 1.6rem;
+    top: 3.0rem;
     display: block;
     margin-right: 20px;
     cursor: pointer;
@@ -634,17 +637,16 @@ footer {
     display: block;
     content: "";
     cursor: pointer;
-    /* margin: auto; */
     position: absolute;
     transition: all 0.5s;
   }
 
   .bars:before {
-    top: 0.5rem;
+    top: 1.2rem;
   }
 
   .bars:after {
-    top: -0.5rem;
+    top: -1.2rem;
   }
 
   .nav-toggle {
@@ -653,7 +655,7 @@ footer {
 
   .nav-toggle:checked ~ .btn-burger .bars {
     background: transparent;
-    top: 1.6rem;
+    top: 3.0rem;
   }
 
   .nav-toggle:checked ~ .btn-burger .bars:before {
@@ -668,7 +670,7 @@ footer {
 
   .nav-toggle:checked ~ .btn-burger {
     right: 10px;
-    top: 0px;
+    top: 3.0px;
     margin-right: 20px;
     position: fixed;
   }
