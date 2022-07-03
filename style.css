@@ -1,0 +1,962 @@
+body {
+  font-family: "Yomogi", cursive;
+  margin: 0px;
+  background-color: #fff;
+}
+
+.completed {
+  opacity: 0;
+  visibility: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+hr.border {
+  color: black;
+  width: 70%;
+}
+
+hr.line {
+  display: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-family: "Shippori Mincho", serif;
+}
+
+.button-text {
+  font-family: "Shippori Mincho", serif;
+  font-size: 1rem;
+}
+
+p {
+  font-family: "Shippori Mincho", serif;
+  margin-bottom: 30px;
+  font-size: 1.2rem;
+}
+
+h1 {
+  font-family: 'Waiting for the Sunrise', cursive;
+  color: rgb(31, 31, 31);
+  font-size: 4rem;
+  font-weight: 100;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 3rem;
+  padding-bottom: 1rem;
+  position: relative;
+  z-index: 10;
+}
+
+h2 {
+  font-weight: 100;
+  font-family: 'Caveat', cursive;
+}
+
+h3 {
+  font-family: 'Klee One', cursive;
+  font-weight: 100;
+}
+
+.container {
+  height: 100%;
+}
+
+.main {
+  display: block;
+  width: 100%;
+}
+
+/* background */
+.cover-bg {
+  position: relative;
+  position: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("img/bg.jpg");
+  opacity: 20%;
+}
+
+/* Header */
+
+.header {
+  top: 0;
+  left: 0;
+  right: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  filter: drop-shadow(0px 4px 10px rgba(57, 99, 104, 0.2));
+  background-color: rgba(255, 255, 255, 0.83);
+}
+
+.header-inner {
+  display: flex;
+  height: 5%;
+  background-color: rgba(255, 255, 255, 0.83);
+  justify-content: space-between;
+}
+
+.header-logo {
+  width: 15%;
+  padding: 0.3rem 0px 0.3rem 5%;
+}
+
+.logo {
+  width: 100%;
+  height: auto;
+  vertical-align: bottom;
+}
+
+.navbar {
+  margin-right: 3rem;
+}
+
+.header-navbar {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-list {
+  display: flex;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-list a {
+  display: block;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1.3rem;
+}
+
+.nav-item {
+  margin-left: 1.5vw;
+}
+
+/* hamburger */
+
+.btn-burger {
+  display: none;
+}
+
+.nav-toggle {
+  display: none;
+}
+
+#navToggle {
+  display: none;
+}
+
+/* video */
+.home {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 5%;
+  z-index: -1;
+  height: 100%;
+}
+
+.video-container {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%;
+  margin-left: auto;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+}
+
+/* icons */
+.icon-bar {
+  width: 100%;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  position: relative;
+  flex-direction: row;
+  z-index: 100;
+  text-align: center;
+}
+
+.icon {
+  width: 35px;
+  margin: 15px;
+  opacity: 70%;
+}
+
+.icon:hover {
+  transform: translateY(2px);
+  cursor: pointer;
+}
+
+/* about */
+#about.content {
+  text-align: left;
+  position: relative;
+  width: 100%;
+}
+
+.about_inner {
+  margin-top: 10%;
+  margin-bottom: 15%;
+}
+
+.inst {
+  margin-top: 5rem;
+  margin-bottom: 5rem;
+  margin-right: 9rem;
+  margin-left: 9rem;  
+}
+
+#inst_inner {
+  text-align: center;
+}
+
+.content h3 {
+  font-size: 2rem;
+  text-align: center;
+  margin: 30px;
+}
+
+.content p {
+  font-family: "Shippori Mincho", serif;
+}
+
+.content-inner {
+  width: 60%;
+  background-color: none;
+  padding-top: 2rem;
+  margin: 5% auto;
+  border-radius: 20px;
+}
+
+/* News */
+
+#news {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.news_inner {
+  width: auto;
+  margin: 1rem auto 5rem;
+}
+
+.news_paragraph {
+  font-size: 1rem;
+}
+
+.news-img {
+  width: 40%;
+  margin-top: 15px;
+}
+
+/* Profile */
+
+#team {
+  width: 75%;
+  height: auto;
+  margin: auto;
+  padding-bottom: 10%;
+  /* background-color: rgb(253, 237, 86); */
+}
+
+.profile {
+  margin: 1rem auto;
+  display: flex;
+  text-align: center;
+}
+
+.main-sq {
+  width: 30%;
+  height: auto;
+  display: block;
+  background: rgb(255, 240, 115);
+  /* margin: auto; */
+  padding: 3rem;
+  border-radius: 20px;
+  z-index: 10;
+  text-align: center;
+  margin: 0px auto;
+  filter: drop-shadow(0px 5px 5px rgba(114, 117, 117, 0.774));
+}
+
+.profile-pic {
+  width: 90%;
+  margin: auto;
+  border-radius: 50%;
+}
+
+.name {
+  margin: 1rem auto;
+}
+
+.name span {
+  width: 120px;
+  height: 60px;
+  color: rgba(0, 0, 0, 1);
+  font-weight: 100;
+  font-family: 'Caveat', cursive;
+  font-size: 3rem;
+}
+
+.intro {
+  text-align: left;
+  height: 20%;
+}
+
+.intro span {
+  width: 85%;
+  height: 40%;
+  padding: 1rem auto;
+  color: rgba(0, 0, 0, 1);
+  font-family: "Shippori Mincho", serif;
+  font-size: 1rem;
+}
+
+.profile-ref-link {
+  position: relative;
+  text-align: center;
+  margin: 1.5rem auto;
+  display: flex;
+}
+
+.profile-ref-link a {
+  margin: auto;
+}
+
+.profile-ref-link a:hover {
+  color: #000000a1;
+}
+
+/* works */
+
+#photos {
+  z-index: 100;
+  padding-bottom: 10%;
+}
+
+.front-photo-box {
+  width: 100%;
+  text-align: center;
+}
+
+.front-photo-box img {
+  z-index: 10;
+  width: 35%;
+  margin: 2rem auto 0px;
+  border-radius: 20px; 
+  box-shadow: 0px 5px 5px rgba(100, 100, 100, 0.774);
+}
+
+.front-photo-box img:hover {
+  transform: translateY(2px);
+  box-shadow: 0px 3px 3px rgba(100, 100, 100, 0.774);
+}
+
+/* plans */
+
+#plans.content {
+  position: relative;
+  padding-bottom: 10%;
+}
+
+h2.plan-head {
+  font-size: 3rem;
+  margin: auto 10px;
+}
+
+.plan {
+  width: 50%;
+  margin: 2rem auto;
+  background-color: white;
+  border-radius: 10px;
+  filter: drop-shadow(0px 3px 3px rgba(100, 100, 100, 0.774));
+}
+
+.plan a {
+  display: flex;
+}
+
+.plan:hover {
+  transform: translateY(2px);
+  filter: drop-shadow(0px 2px 2px rgba(100, 100, 100, 0.774));
+}
+
+.plan img {
+  object-fit: cover;
+  width: 40%;
+  /* margin: 1rem; */
+  border-radius: 10px 0px 0px 10px;
+}
+
+.plan-content {
+  margin: 1.5rem;
+  display: block;
+  width: auto;
+}
+
+.plan-detail {
+  margin: 1rem auto;
+}
+
+p.plan-price {
+  font-family: "Shippori Mincho", serif;
+  margin: 10px;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+p.plan-price span {
+  font-size: 1.2rem;
+}
+
+p.plan-instruction {
+  font-family: "Shippori Mincho", serif;
+  margin: 1rem auto;
+  font-size: 0.9rem;
+}
+
+/* notes */
+
+.note {
+  width: 95%;
+  width: 300px;
+  background-color: aliceblue;
+  display: flex;
+  filter: drop-shadow(0px 5px 5px rgba(114, 117, 117, 0.774));
+}
+
+/* voices */
+#voices {
+  width: 100%;
+  padding-bottom: 6%;
+}
+
+.voice_box {
+  height: auto;
+  width: 400px;
+  border-radius: 10px;
+  background-color: rgb(255, 255, 255);
+  flex: 0 0 400px;
+  margin: auto 1.5rem;
+  filter: drop-shadow(0px 3px 3px rgba(114, 117, 117, 0.774));
+  text-align: center;
+}
+
+.voice_box img {
+  margin: 1rem auto 0;
+  width: 90%;
+  border-radius: 10px;
+}
+
+.voice_box p {
+  text-align: left;
+  height: 50%;
+  font-size: 0.9rem;
+  padding: 0px;
+  margin: 1.2rem;
+}
+
+.wrapper {
+  /* align-items: center; */
+  overflow-x: auto;
+  width: 100%;
+  display: flex;
+  padding-top: 2.5rem;
+  padding-bottom: 4rem;
+  scroll-snap-type: x;
+  gap: 0rem;
+}
+
+.wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+/* contact */
+#contact.content {
+  text-align: center;
+}
+
+.email p {
+  font-size: 1rem;
+  margin: 3rem;
+}
+
+p.contact_msg {
+  text-align: left;
+  padding: 0;
+  font-size: 1.2rem;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+p.email_adrs {
+  font-size: 1.5rem;
+}
+
+div.contact-content {
+  width: 30%;
+  padding: 3rem 0;
+  margin: 3rem auto;
+  background-color: none;
+  border-radius: 20px;
+  filter: drop-shadow(0px 5px 5px rgba(114, 117, 117, 0.774));
+}
+
+.email {
+  position: relative;
+  text-align: center;
+  margin: 0px auto 5rem auto;
+  padding: 0px auto 30px auto;
+  width: 60%;
+  background-color: none;
+  border-radius: 20px;
+}
+
+/* footer */
+
+footer {
+  position: relative;
+  bottom: 0;
+}
+
+.footer-box {
+  width: 100%;
+  padding: 20px 0;
+  background-color: rgb(29, 29, 29);
+  text-align: center;
+}
+
+.footer-img {
+  width: 10%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-text {
+  text-align: center;
+}
+
+.footer-text p {
+  font-family: "Shippori Mincho", serif;
+  margin: 10px 0 0 0;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+/* mobile */
+
+@media screen and (max-width: 900px) {
+  .content h1 {
+    font-size: 2.5rem;
+    /* margin: 0 auto; */
+    padding-top: 2rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    /* background-image: url("img/brush.png"); */
+    background-repeat: no-repeat;
+    background-size: 12rem;
+    background-position: center 1.5rem;
+  }
+
+  hr.line {
+      display: block;
+      color: black;
+  }
+
+  .header-inner {
+    display:inline; 
+    width: 100%;
+    vertical-align: middle;
+  }
+
+  .header-navbar {
+    height: 100%;
+    width: 100%;
+    /* padding: 3rem; */
+    display: block;
+  }
+
+  .header-logo {
+    min-width: 40%;
+    /* padding: 1rem 1rem 1rem 5%; */
+  }
+
+  .home {
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 15%;
+  }
+
+
+
+  /*ハンバーガーアイコン*/
+  .btn-burger {
+    position: fixed;
+    width: 10%;
+    height: auto;
+    right: 10px;
+    top: 1.6rem;
+    display: block;
+    margin-right: 20px;
+    cursor: pointer;
+  }
+
+  .bars,
+  .bars:before,
+  .bars:after {
+    height: 4px; /*線の太さ*/
+    width: 100%; /*線の長さ*/
+    background-color: rgb(56, 56, 56);
+    border-radius: 2px;
+    display: block;
+    content: "";
+    cursor: pointer;
+    /* margin: auto; */
+    position: absolute;
+    transition: all 0.5s;
+  }
+
+  .bars:before {
+    top: 0.5rem;
+  }
+
+  .bars:after {
+    top: -0.5rem;
+  }
+
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-toggle:checked ~ .btn-burger .bars {
+    background: transparent;
+    top: 1.6rem;
+  }
+
+  .nav-toggle:checked ~ .btn-burger .bars:before {
+    transform: rotate(-45deg);
+    top: 0px;
+  }
+
+  .nav-toggle:checked ~ .btn-burger .bars:after {
+    transform: rotate(45deg);
+    top: 0px;
+  }
+
+  .nav-toggle:checked ~ .btn-burger {
+    right: 10px;
+    top: 0px;
+    margin-right: 20px;
+    position: fixed;
+  }
+
+  /*表示されるメニューの中身*/
+  .navbar {
+    margin: auto auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .nav-list a {
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 1.5rem;
+  }
+
+  .nav-list {
+      text-align: center;
+      list-style: none;
+      display: none;
+      padding: 0;
+  }
+
+  .nav-item {
+    margin: 0;
+    padding: 5px;
+  }
+
+  .nav-toggle:checked ~ .navbar .nav-list {
+    display: block;
+    width: 100%;
+    height: 100%;
+    margin: 1rem auto;
+    border-radius: 30px;
+    padding-bottom: 100%;
+  }
+
+  .nav-toggle:checked ~ .header-navbar {
+      height: 100%;
+      width: 100%;
+    }
+
+  .icon-bar {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    top: 70%;
+    text-align: center;
+    z-index: 60;
+  }
+
+  .icon {
+    width: 25px;
+    margin: 5px;
+  }
+
+  .home {
+    width: 100%;
+    /* padding-top: 7rem; */
+  }
+
+  #about.content {
+    text-align: left;
+    height: 20%;
+    position: relative;
+    width: 100%;
+  }
+
+  .content h3 {
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 3rem auto 2rem auto;
+  }
+
+  .content p {
+    font-family: "Shippori Mincho", serif;
+    font-size: 0.9rem;
+    padding: 0;
+  }
+
+  .content-inner {
+    width: 85%;
+    margin: 20px auto;
+  }
+
+  .inst {
+    margin: 1.5rem;
+    padding: 0;
+  }
+
+  /* news */
+
+  p.news_paragraph {
+    font-size: 1rem;
+    margin: auto 1rem;
+    text-align: center;
+  }
+
+  .news-img {
+    width: 90%;
+    margin-top: 20px;
+  }
+
+  .news-paragraph {
+    width: 85%;
+    margin: auto;
+  }
+
+  /* team */
+
+  #team {
+    width: 100%;
+    margin: auto;
+  }
+
+  .profile {
+    display: block;
+    text-align: center;
+  }
+
+  .profile-pic {
+    width: 100%;
+  }
+
+  .profile-area {
+    width: 80%;
+  }
+
+  .main-sq {
+    width: 60%;
+    margin: 1.5rem auto;
+  }
+
+  .profile-ref-link {
+    display: block;
+  }
+
+  /* photos */
+
+  #photo {
+      margin: 0px;
+  }
+
+  .front-photo-box img {
+    width: 60%;
+    margin: 2rem auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 5px rgba(12, 12, 12, 0.76);
+  }
+
+  /* plan */
+  h2.plan-head {
+    width: 90%;
+    font-size: 2rem;
+    margin: auto 10px;
+  }
+
+  #plan_title {
+      margin: 0px;
+  }
+
+  .plan {
+    width: 85%;
+    text-align: center;
+    height: auto;
+    margin: 2rem auto;
+    border-radius: 10px;
+    filter: drop-shadow(0px 5px 5px rgba(114, 117, 117, 0.774));
+  }
+
+  .plan a {
+    display: block;
+  }
+
+  .plan img {
+    /* object-fit: cover; */
+    width: 100%;
+    /* margin-top: 1.5rem; */
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0;
+    border-radius: 10px 10px 0px 0px;
+  }
+
+  .plan-content {
+    text-align: left;
+    width: 80%;
+    padding: 1rem;
+    margin: auto;
+    display: block;
+  }
+
+  p.plan-price {
+    font-family: "Shippori Mincho", serif;
+    margin: 10px;
+    width: 100%;
+    padding: 0;
+  }
+
+  p.plan-instruction {
+    font-family: "Shippori Mincho", serif;
+    font-size: 1rem;
+    padding: 0;
+    margin: auto;
+  }
+
+  /* voices */
+
+  .voice_box {
+    height: auto;
+    width: 60%;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    flex: 0 0 75%;
+    margin: auto 1.5rem;
+    filter: drop-shadow(0px 3px 3px rgba(114, 117, 117, 0.774));
+  }
+
+  .voice_box p{
+    font-size: 1rem;
+  }
+
+  .wrapper {
+    /* align-items: center; */
+    overflow-x: auto;
+    width: 100%;
+    display: flex;
+    padding-top: 0;
+    padding-bottom: 2rem;
+    scroll-snap-type: x;
+    gap: 0rem;
+  }
+ 
+  /* contact */
+  .email p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1rem;
+    margin: 1rem;
+  }
+
+  p.contact_msg {
+    text-align: left;
+    margin: 1rem;
+  }
+
+  div.contact-content {
+    width: 100%;
+    padding: 3rem 0;
+    margin: 3rem auto;
+    background-color: white;
+    border-radius: 20px;
+    filter: drop-shadow(0px 5px 5px rgba(114, 117, 117, 0.774));
+  }
+
+  #contact_title {
+      margin: 0px;
+  }
+
+  .email {
+    position: relative;
+    text-align: left;
+    margin: 1rem auto 3rem auto;
+    padding: 0;
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  .footer-box {
+    bottom: 0;
+    width: 100%;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    opacity: 80%;
+    background-color: rgb(34, 34, 34);
+  }
+
+  .footer-img {
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .footer-text p {
+    font-family: "Shippori Mincho", serif;
+    text-align: center;
+    margin: 10px;
+    font-size: 1rem;
+  }
+}
